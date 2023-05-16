@@ -38,7 +38,7 @@ Project Organization
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment
     │
-     |
+    |
     └── src                <- Source code for use in this project.
          ├── __ init __.py    <- Makes src a Python module
          │
