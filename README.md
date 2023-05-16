@@ -127,6 +127,6 @@ The Lyrics Generation Model can be used as follows:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-With the Lyrics Generation Model, you can embark on a creative journey of generating unique song lyrics that capture the essence of different music genres, artists, and themes. Let your imagination flow and dive into the world of AI-assisted lyrics creation!
+With the Lyrical, you can embark on a creative journey of generating unique song lyrics that capture the essence of different music genres, artists, and themes. Let your imagination flow and dive into the world of AI-assisted lyrics creation!
 
 Happy lyrics generation!
