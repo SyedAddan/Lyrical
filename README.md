@@ -96,13 +96,26 @@ The Lyrics Generation Model can be used as follows:
 
 1. Preprocess the dataset:
 
-   - Place the [raw data files](https://www.kaggle.com/datasets/nikhilnayak123/5-million-song-lyrics-dataset) in the `data/raw` directory.
-   - Run the data preprocessing script:
+   - Follow these steps to configure you Kaggle API key (this step is crucial for the training of the model)
+
+     - Go to the Kaggle website ([https://www.kaggle.com](https://www.kaggle.com/)) and sign in to your account.
+
+     * Click on your profile picture in the top-right corner and select "My Account" from the dropdown menu.
+     * Scroll down to the "API" section and click on "Create New API Token". This will download a file named "kaggle.json" containing your API credentials.
+     * Place the downloaded "kaggle.json" file in the appropriate directory. If you're using Windows, it should be placed in the directory: `C:\Users\<your-username>\.kaggle\`. On macOS and Linux, it should be placed in: `~/.kaggle/`.
+   - Run the raw data making script:
+
      ```bash
-     python src/data/make_dataset.py
+     python src/data/make_raw.py
+     ```
+   - Run the data preprocessing script:
+
+     ```bash
+     python src/data/make_processed.py
      ```
    - The preprocessed data will be saved in the `data/processed` directory.
    - Run the Build features script:
+
      ```bash
      python src/features/build_features.py
      ```

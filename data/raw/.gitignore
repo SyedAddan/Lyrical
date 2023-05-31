@@ -1,0 +1,5 @@
+# Keep Data Files away from source control to avoid slow uploads
+# and to avoid conflicts with other developers
+song_lyrics.csv
+ds2.csv
+5-million-song-lyrics-dataset.zip
