@@ -2,6 +2,9 @@
 
 This repository contains an end-to-end Lyrics Generation Model, a machine learning project aimed at generating original song lyrics using deep learning techniques. The model is trained on a dataset of song lyrics obtained from various sources, including Genius Lyrics, and is capable of generating new lyrics that are stylistically similar to the training data.
 
+## Important
+This is still a work in progress (WIP)
+
 ## Project Overview
 
 The Lyrics Generation Model leverages the power of recurrent neural networks (RNNs) and natural language processing to learn the patterns, structure, and vocabulary of song lyrics. By training on a diverse collection of lyrics from different genres and artists, the model can capture the nuances and characteristics of various music styles and intelligently generate lyrics that adhere to specific themes, genres, or even mimic the style of a particular artist.
@@ -38,7 +41,7 @@ Project Organization
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment
     │
-     |
+    |
     └── src                <- Source code for use in this project.
          ├── __ init __.py    <- Makes src a Python module
          │
@@ -140,6 +143,6 @@ The Lyrics Generation Model can be used as follows:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-With the Lyrics Generation Model, you can embark on a creative journey of generating unique song lyrics that capture the essence of different music genres, artists, and themes. Let your imagination flow and dive into the world of AI-assisted lyrics creation!
+With the Lyrical, you can embark on a creative journey of generating unique song lyrics that capture the essence of different music genres, artists, and themes. Let your imagination flow and dive into the world of AI-assisted lyrics creation!
 
 Happy lyrics generation!
