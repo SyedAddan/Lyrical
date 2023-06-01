@@ -1,28 +1,21 @@
 # Lyrical
 
-```
 <div align="center">
-	![Lyrical](https://imgur.com/Ip91IED)
+	<img src="images/lyrical.png" height="300">
 </div>
-```
 
-`<br>`
+<br>
 
 <div align="center">
-   [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/SyedAddan/Lyrical)[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/SyedAddan/Lyrical)
+   <img src="images/made-with-python.svg">
+   <img src="images/built-with-love.svg">
    <br>
-   [![WIP](https://img.shields.io/badge/WIP-Yes-green)][![Contribute](https://img.shields.io/badge/contributions-welcome-green)][![License](https://img.shields.io/badge/License-MIT-blue)]
+   <img src="images/WIP.svg"><img src="images/contribute.svg"><img src="images/license.svg">
 </div>
-
-Lyrical is an end-to-end Lyrics Generation Model, a machine learning project aimed at generating original song lyrics using deep learning techniques. The model is trained on a dataset of song lyrics obtained from various sources, including Genius Lyrics, and is capable of generating new lyrics that are stylistically similar to the training data.
-
-## Important
-
-This is still a work in progress (WIP)
 
 ## Project Overview
 
-The Lyrics Generation Model leverages the power of recurrent neural networks (RNNs) and natural language processing to learn the patterns, structure, and vocabulary of song lyrics. By training on a diverse collection of lyrics from different genres and artists, the model can capture the nuances and characteristics of various music styles and intelligently generate lyrics that adhere to specific themes, genres, or even mimic the style of a particular artist.
+Lyrical is an end-to-end Lyrics Generation Model that leverages the power of recurrent neural networks (RNNs) and natural language processing to learn the patterns, structure, and vocabulary of song lyrics. By training on a diverse collection of lyrics from different genres and artists, the model can capture the nuances and characteristics of various music styles and intelligently generate lyrics that adhere to specific themes, genres, or even mimic the style of a particular artist.
 
 ## Features
 
@@ -140,6 +133,33 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
      make generate
      ```
    - The generated lyrics will be displayed or saved, depending on the configuration.
+
+
+## Reach Out
+
+<div align="center">
+   <table>
+      <tbody>
+         <tr>
+               <td>
+                  <a href="https://www.linkedin.com/in/syedaddan/">
+                     <img height="50" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" >
+                  </a>
+               </td>
+               <td>
+                  <a href="https://github.com/SyedAddan">
+                     <img height="50" src="https://upload.vectorlogo.zone/logos/github/images/47bfd2d4-712f-4dee-9315-f99c611b7598.svg" />
+                  </a>
+               </td>
+               <td>
+                  <a href="https://discordapp.com/users/557548825154420737">
+                     <img height="50" src="https://www.vectorlogo.zone/logos/discordapp/discordapp-tile.svg"/>
+                  </a>
+               </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
 
 ## License
 
