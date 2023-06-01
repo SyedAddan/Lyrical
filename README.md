@@ -1,14 +1,16 @@
 # Lyrical
 
+```
 <div align="center">
-      <img src="https://imgur.com/Ip91IED" crossorigin>
+	![Lyrical](https://imgur.com/Ip91IED)
 </div>
+```
 
-<br />
+`<br>`
 
 <div align="center">
    [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/SyedAddan/Lyrical)[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/SyedAddan/Lyrical)
-   <br />
+   <br>
    [![WIP](https://img.shields.io/badge/WIP-Yes-green)][![Contribute](https://img.shields.io/badge/contributions-welcome-green)][![License](https://img.shields.io/badge/License-MIT-blue)]
 </div>
 
@@ -44,7 +46,7 @@ Project Organization
     │
     ├── models             				<- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          				<- Jupyter notebooks. Naming convention is a version number (for ordering), my first name, and a short`-` delimited description, e.g. `1.0-syed-initial_data_exploration`.
+    ├── notebooks          				<- Jupyter notebooks. Naming convention is a version number (for ordering), my first name, and a short `-` delimited description, e.g. `1.0-syed-initial_data_exploration`.
     │
     ├── reports            				<- Generated analysis as HTML, PDF, LaTeX, etc.
     │
