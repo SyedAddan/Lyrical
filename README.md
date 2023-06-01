@@ -1,8 +1,23 @@
 # Lyrical
 
-This repository contains an end-to-end Lyrics Generation Model, a machine learning project aimed at generating original song lyrics using deep learning techniques. The model is trained on a dataset of song lyrics obtained from various sources, including Genius Lyrics, and is capable of generating new lyrics that are stylistically similar to the training data.
+<div align="center">
+    <a href="http://thismypc.com/">
+        <img src="https://imgur.com/Ip91IED" crossorigin>
+    </a>
+</div>
+
+<br />
+
+<div align="center">
+   [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/SyedAddan/Lyrical)[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/SyedAddan/Lyrical)
+   <br />
+   [![WIP](https://img.shields.io/badge/WIP-Yes-green)][![Contribute](https://img.shields.io/badge/contributions-welcome-green)][![License](https://img.shields.io/badge/License-MIT-blue)]
+</div>
+
+Lyrical is an end-to-end Lyrics Generation Model, a machine learning project aimed at generating original song lyrics using deep learning techniques. The model is trained on a dataset of song lyrics obtained from various sources, including Genius Lyrics, and is capable of generating new lyrics that are stylistically similar to the training data.
 
 ## Important
+
 This is still a work in progress (WIP)
 
 ## Project Overview
@@ -21,47 +36,41 @@ The Lyrics Generation Model leverages the power of recurrent neural networks (RN
 Project Organization
 --------------------
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like`make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project. (you are here!)
+    ├── LICENSE					<- MIT License
+    ├── Makefile           				<- Makefile with commands like`make data` or `make train`
+    ├── README.md          			<- The top-level README for developers using this project. (you are here!)
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── features 	     			<- Extracted Features from the preprocessed dataset.
+    │   ├── processed      			<- Preprocessed Dataset.
+    │   └── raw            				<- Raw Dataset.
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── models             				<- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         my first name, and a short `-` delimited description, e.g.
-    │                         `1.0-syed-initial-data-exploration`.
+    ├── notebooks          				<- Jupyter notebooks. Naming convention is a version number (for ordering), my first name, and a short`-` delimited description, e.g. `1.0-syed-initial_data_exploration`.
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── reports            				<- Generated analysis as HTML, PDF, LaTeX, etc.
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
+    ├── requirements.txt   			<- The requirements file for reproducing the analysis environment
     │
-    |
-    └── src                <- Source code for use in this project.
-         ├── __ init __.py    <- Makes src a Python module
+    └── src                				<- Source code for use in this project.
+         ├── __ init __.py    				<- Makes src a Python module
          │
-         ├── data           <- Scripts to download or generate data
+         ├── data           				<- Scripts to download or generate data
          │   └── make_dataset.py
          │
-         ├── features       <- Scripts to turn raw data into features for modeling
+         ├── features       				<- Scripts to turn raw data into features for modeling
          │   └── build_features.py
          │
-         ├── models         <- Scripts to train models and then use trained models to make
-         │   │                 predictions
+         ├── models         				<- Scripts to train models and then use trained models to make predictions
          │   ├── predict_model.py
          │   └── train_model.py
          │
-         └── visualization  <- Scripts to create exploratory and results oriented visualizations
+         └── visualization  				<- Scripts to create exploratory and results oriented visualizations
              └── visualize.py
 
 ## Installation
 
-To set up the Lyrics Generation Model, follow the instructions below:
+To set up Lyrical, follow the instructions below:
 
 1. Clone the repository:
 
@@ -95,47 +104,40 @@ pip install -r requirements.txt
 
 ## Usage
 
-The Lyrics Generation Model can be used as follows:
+The Lyrics Generation Model can be used as follows:Preprocess the dataset:
 
-1. Preprocess the dataset:
+1. Data Preprocessing:
 
-   - Follow these steps to configure you Kaggle API key (this step is crucial for the training of the model)
+   - Follow these steps to configure your Kaggle API key (this step is crucial for training the model)
 
      - Go to the Kaggle website ([https://www.kaggle.com](https://www.kaggle.com/)) and sign in to your account.
-
-     * Click on your profile picture in the top-right corner and select "My Account" from the dropdown menu.
-     * Scroll down to the "API" section and click on "Create New API Token". This will download a file named "kaggle.json" containing your API credentials.
-     * Place the downloaded "kaggle.json" file in the appropriate directory. If you're using Windows, it should be placed in the directory: `C:\Users\<your-username>\.kaggle\`. On macOS and Linux, it should be placed in: `~/.kaggle/`.
-   - Run the raw data making script:
-
-     ```bash
-     python src/data/make_raw.py
-     ```
-   - Run the data preprocessing script:
+     - Click on your profile picture in the top-right corner and select "My Account" from the dropdown menu.
+     - Scroll down to the "API" section and click on "Create New API Token". This will download a file named "kaggle.json" containing your API credentials.
+     - Place the downloaded "kaggle.json" file in the appropriate directory. If you're using Windows, it should be placed in: `C:\Users\<your-username>\.kaggle\`. On macOS and Linux, it should be placed in: `~/.kaggle/`.
+   - Run the following command:
 
      ```bash
-     python src/data/make_processed.py
+     make data
      ```
-   - The preprocessed data will be saved in the `data/processed` directory.
-   - Run the Build features script:
-
-     ```bash
-     python src/features/build_features.py
-     ```
+   - This command will fetch the dataset, preprocess it and will extract features from it as well.
+   - The raw dataset will be saved in the `data/raw` directory.
+   - The processed dataset will be saved in the `data/processed` directory.
+   - The extracted features will be saved in the `data/features` directory.
 2. Train the model:
 
    - Customize the model configuration in the `src/models/train_model.py` script.
-   - Run the model training script:
+   - Run the following command:
      ```bash
-     python src/models/train_model.py
+     make train
      ```
-   - The trained model will be saved in the `models` directory.
-3. Generate lyrics:
+   - The trained model(s) will be saved in the `models` directory.
+3. Testing Model:
 
    - Customize the generation settings in the `src/models/predict_model.py` script.
-   - Run the lyrics generation script:
+   - Run the following command:
+
      ```bash
-     python src/models/predict_model.py
+     make generate
      ```
    - The generated lyrics will be displayed or saved, depending on the configuration.
 
