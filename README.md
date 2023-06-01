@@ -1,11 +1,7 @@
 # Lyrical
 
 <div align="center">
-<<<<<<< HEAD
 	<img src="images/lyrical.png" height="300">
-=======
-	<img src="images/lyrical.png" width="400">
->>>>>>> 1d992dfe8aa7f760dd5ad79f6e2c082004f90159
 </div>
 
 <br>
