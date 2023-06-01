@@ -1,4 +1,4 @@
-# Lyrical
+# 🎼 Lyrical
 
 <div align="center">
 	<img src="images/lyrical.png" height="300">
@@ -13,11 +13,11 @@
    <img src="images/WIP.svg"><img src="images/contribute.svg"><img src="images/license.svg">
 </div>
 
-## Project Overview
+## 📖 Overview
 
 Lyrical is an end-to-end Lyrics Generation Model that leverages the power of recurrent neural networks (RNNs) and natural language processing to learn the patterns, structure, and vocabulary of song lyrics. By training on a diverse collection of lyrics from different genres and artists, the model can capture the nuances and characteristics of various music styles and intelligently generate lyrics that adhere to specific themes, genres, or even mimic the style of a particular artist.
 
-## Features
+## ➕ Features
 
 - **Data Collection**: The model incorporates a web scraping component to collect song lyrics from popular online platforms such as Genius Lyrics. The lyrics, along with associated metadata such as artist name, song title, genre, and album, are gathered to provide additional context for conditioning the model during the generation process.
 - **Data Preprocessing**: The collected lyrics are meticulously preprocessed to ensure data quality and consistency. This includes removing irrelevant information, handling missing values, standardizing text formatting, and performing other data cleaning tasks. The lyrics are also tokenized and converted into numerical representations suitable for training the lyrics generation model.
@@ -26,8 +26,7 @@ Lyrical is an end-to-end Lyrics Generation Model that leverages the power of rec
 - **Evaluation and Fine-tuning**: The generated lyrics can be evaluated using metrics such as perplexity, BLEU score, or through human evaluation. This evaluation process helps fine-tune the model by iteratively adjusting hyperparameters, experimenting with different architectures, and training strategies to optimize the results and enhance the quality and creativity of the generated lyrics.
 - **Lyrics Generation**: Once trained, the model can generate new lyrics by providing a seed input or prompt along with the desired conditioning information. The model uses the learned patterns and structures from the training dataset to generate lyrics that are coherent, stylistically appropriate, and aligned with the provided conditioning factors.
 
-Project Organization
---------------------
+## 🌳 Organization
 
     ├── LICENSE					<- MIT License
     ├── Makefile           				<- Makefile with commands like`make data` or `make train`
@@ -61,7 +60,7 @@ Project Organization
          └── visualization  				<- Scripts to create exploratory and results oriented visualizations
              └── visualize.py
 
-## Installation
+## 🖲️ Installation
 
 To set up Lyrical, follow the instructions below:
 
@@ -95,7 +94,7 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-## Usage
+## 💻 Usage
 
 The Lyrics Generation Model can be used as follows:Preprocess the dataset:
 
@@ -134,8 +133,7 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
      ```
    - The generated lyrics will be displayed or saved, depending on the configuration.
 
-
-## Reach Out
+## 💫 Reach Out
 
 <div align="center">
    <table>
@@ -161,10 +159,10 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
    </table>
 </div>
 
-## License
+## 📃 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-With the Lyrical, you can embark on a creative journey of generating unique song lyrics that capture the essence of different music genres, artists, and themes. Let your imagination flow and dive into the world of AI-assisted lyrics creation!
+With Lyrical, you can embark on a creative journey of generating unique song lyrics that capture the essence of different music genres, artists, and themes. Let your imagination flow and dive into the world of AI-assisted lyrics creation!
 
-Happy lyrics generation!
+Happy lyrics generation! 💗
