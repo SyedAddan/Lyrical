@@ -1,9 +1,7 @@
 # Lyrical
 
 <div align="center">
-    <a href="http://thismypc.com/">
-        <img src="https://imgur.com/Ip91IED" crossorigin>
-    </a>
+      <img src="https://imgur.com/Ip91IED" crossorigin>
 </div>
 
 <br />
