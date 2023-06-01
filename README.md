@@ -1,12 +1,10 @@
 # Lyrical
 
-```
 <div align="center">
-	![Lyrical](https://imgur.com/Ip91IED)
+	<img src="images/lyrical.png" width="400">
 </div>
-```
 
-`<br>`
+<br>
 
 <div align="center">
    [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/SyedAddan/Lyrical)[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/SyedAddan/Lyrical)
