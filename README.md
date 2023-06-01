@@ -150,8 +150,8 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
 
 ## 👨‍👩‍👧‍👦 Contributors
 
-<a href="https://github.com/syedaddan/Python/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=syedaddan/lyrical"/>
+<a href="https://github.com/syedaddan/lyrical/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=syedaddan/lyrical" />
 </a>
 
 ## 💫 Reach Out
