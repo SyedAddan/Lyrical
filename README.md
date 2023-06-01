@@ -28,36 +28,37 @@ Lyrical is an end-to-end Lyrics Generation Model that leverages the power of rec
 
 ## 🌳 Organization
 
-    ├── LICENSE					<- MIT License
-    ├── Makefile           				<- Makefile with commands like`make data` or `make train`
+    ├── LICENSE				<- MIT License
+    ├── Makefile           			<- Makefile with commands like`make data` or `make train`
     ├── README.md          			<- The top-level README for developers using this project. (you are here!)
     ├── data
-    │   ├── features 	     			<- Extracted Features from the preprocessed dataset.
+    │   ├── features 	     		<- Extracted Features from the preprocessed dataset.
     │   ├── processed      			<- Preprocessed Dataset.
-    │   └── raw            				<- Raw Dataset.
+    │   └── raw            			<- Raw Dataset.
     │
-    ├── models             				<- Trained and serialized models, model predictions, or model summaries
+    ├── models             			<- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          				<- Jupyter notebooks. Naming convention is a version number (for ordering), my first name, and a short `-` delimited description, e.g. `1.0-syed-initial_data_exploration`.
+    ├── notebooks          			<- Jupyter notebooks. Naming convention is a version number (for ordering), my first name, and a short `-` delimited description, e.g. `1.0-syed-initial_data_exploration`.
     │
-    ├── reports            				<- Generated analysis as HTML, PDF, LaTeX, etc.
+    ├── reports            			<- Generated analysis as HTML, PDF, LaTeX, etc.
     │
     ├── requirements.txt   			<- The requirements file for reproducing the analysis environment
     │
-    └── src                				<- Source code for use in this project.
-         ├── __ init __.py    				<- Makes src a Python module
+    └── src                			<- Source code for use in this project.
+         ├── __init__.py    		<- Makes src a Python module
          │
-         ├── data           				<- Scripts to download or generate data
-         │   └── make_dataset.py
+         ├── data           		<- Scripts to download data & preprocess it
+	     │   ├── make_raw.py		<- Script that downloads data from Kaggle
+         │   └── make_processed.py		<- Script that preprcocesses the downloaded data
          │
-         ├── features       				<- Scripts to turn raw data into features for modeling
+         ├── features       		<- Scripts to turn raw data into features for modeling
          │   └── build_features.py
          │
-         ├── models         				<- Scripts to train models and then use trained models to make predictions
+         ├── models         		<- Scripts to train models and then use trained models to make predictions
          │   ├── predict_model.py
          │   └── train_model.py
          │
-         └── visualization  				<- Scripts to create exploratory and results oriented visualizations
+         └── visualization  		<- Scripts to create exploratory and results oriented visualizations
              └── visualize.py
 
 ## 🖲️ Installation
@@ -94,6 +95,8 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+6. Make sure you have make installed in your system (if you don't or if your system doesn't support it, you can run the alternative commands to run the project)
+
 ## 💻 Usage
 
 The Lyrics Generation Model can be used as follows:Preprocess the dataset:
@@ -111,7 +114,13 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
      ```bash
      make data
      ```
-   - This command will fetch the dataset, preprocess it and will extract features from it as well.
+     OR (alternative commands)
+     ```bash
+     python src/data/make_raw.py
+     python src/data/make_processed.py
+     python src/features/build_features.py
+     ```
+   - This/these command(s) will fetch the dataset, preprocess it and will extract features from it as well.
    - The raw dataset will be saved in the `data/raw` directory.
    - The processed dataset will be saved in the `data/processed` directory.
    - The extracted features will be saved in the `data/features` directory.
@@ -122,6 +131,10 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
      ```bash
      make train
      ```
+     OR (alternative commands)
+     ```bash
+     python src/models/train_model.py
+     ```
    - The trained model(s) will be saved in the `models` directory.
 3. Testing Model:
 
@@ -131,6 +144,8 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
      ```bash
      make generate
      ```
+   - This command will display a number of models trained to generate lyrics from and will prompt you to select one.
+   - Alternatively, you can rn this 
    - The generated lyrics will be displayed or saved, depending on the configuration.
 
 ## 💫 Reach Out
