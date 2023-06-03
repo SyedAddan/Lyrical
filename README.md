@@ -148,6 +148,12 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
    - Alternatively, you can rn this 
    - The generated lyrics will be displayed or saved, depending on the configuration.
 
+## 👨‍👩‍👧‍👦 Contributors
+
+<a href="https://github.com/syedaddan/lyrical/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=syedaddan/lyrical" />
+</a>
+
 ## 💫 Reach Out
 
 <div align="center">
