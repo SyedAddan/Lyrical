@@ -9,6 +9,7 @@ import gc
 
 model_ckpt = "papluca/xlm-roberta-base-language-detection"
 pipe = pipeline("text-classification", model=model_ckpt, device=-1)
+PROJECT_DIR = Path(__file__).resolve().parents[2]
 
 def identify_language(lyrics: str) -> str|np.nan:
     res = pipe([lyrics], truncation=True, max_length=128)
@@ -23,8 +24,8 @@ def makeProcessed():
     logger = logging.getLogger(__name__)
     logger.info('making preprocessed data set from raw data')
     
-    input_filepath = Path("../../data/raw/song_lyrics.csv")
-    processed_filepath = Path("../../data/processed/lyrics_processed.csv")
+    input_filepath = Path(os.path.join(PROJECT_DIR, "data", "raw", "song_lyrics.csv"))
+    processed_filepath = Path(os.path.join(PROJECT_DIR, "data", "processed", "lyrics_processed.csv"))
     
     logger.info('input_filepath: {}'.format(input_filepath))
     
