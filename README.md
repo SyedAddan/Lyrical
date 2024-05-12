@@ -29,7 +29,6 @@ Lyrical is an end-to-end Lyrics Generation Model that leverages the power of rec
 ## 🌳 Organization
 
     ├── LICENSE				<- MIT License
-    ├── Makefile           			<- Makefile with commands like`make data` or `make train`
     ├── README.md          			<- The top-level README for developers using this project. (you are here!)
     ├── data
     │   ├── features 	     		<- Extracted Features from the preprocessed dataset.
@@ -38,24 +37,22 @@ Lyrical is an end-to-end Lyrics Generation Model that leverages the power of rec
     │
     ├── models             			<- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          			<- Jupyter notebooks. Naming convention is a version number (for ordering), my first name, and a short `-` delimited description, e.g. `1.0-syed-initial_data_exploration`.
+    ├── notebooks          			<- Jupyter notebooks. Naming convention is a version number (for ordering), my first name, and a short`-` delimited description, e.g. `1.0-syed-initial_data_exploration`.
     │
     ├── reports            			<- Generated analysis as HTML, PDF, LaTeX, etc.
     │
     ├── requirements.txt   			<- The requirements file for reproducing the analysis environment
     │
     └── src                			<- Source code for use in this project.
-         ├── __init__.py    		<- Makes src a Python module
-         │
          ├── data           		<- Scripts to download data & preprocess it
-	     │   ├── make_raw.py		<- Script that downloads data from Kaggle
+	 │   ├── make_raw.py		<- Script that downloads data from Kaggle
          │   └── make_processed.py		<- Script that preprcocesses the downloaded data
          │
          ├── features       		<- Scripts to turn raw data into features for modeling
          │   └── build_features.py
          │
          ├── models         		<- Scripts to train models and then use trained models to make predictions
-         │   ├── predict_model.py
+         │   ├── infer_model.py
          │   └── train_model.py
          │
          └── visualization  		<- Scripts to create exploratory and results oriented visualizations
@@ -68,7 +65,7 @@ To set up Lyrical, follow the instructions below:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/syedaddan/lyrical.git
+git clone https://github.com/syedaddan/Lyrical.git
 ```
 
 2. Navigate to the project directory:
@@ -77,47 +74,55 @@ git clone https://github.com/syedaddan/lyrical.git
 cd lyrical
 ```
 
-3. Create a virtual environment (optional but recommended):
+3. Create a virtual environment (recommended):
 
-```bash
-python3 -m venv env
-```
+   1. For Linux/Mac:
 
+      ```bash
+      python3 -m venv venv
+      ```
+   2. For Windows:
+
+      ```bash
+      python -m venv venv
+      ```
 4. Activate the virtual environment:
 
-```bash
-source env/bin/activate
-```
+   1. For Linux/Mac:
 
+      ```bash
+      source venv/bin/activate
+      ```
+   2. For Windows (for cmd, for powershell replace the .bat with .ps1):
+
+      ```bash
+      .\venv\Scripts\activate.bat
+      ```
 5. Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-6. Make sure you have make installed in your system (if you don't or if your system doesn't support it, you can run the alternative commands to run the project)
+7. Also, if you are on windows please make sure you have Visual Studio Build Tools installed.
 
 ## 💻 Usage
 
-The Lyrics Generation Model can be used as follows:Preprocess the dataset:
+The Lyrics Generation Model can be used as follows:
 
 1. Data Preprocessing:
 
-   - Follow these steps to configure your Kaggle API key (this step is crucial for training the model)
+   - Follow these steps to configure your Kaggle API key (this step is crucial to get the data for training the model)
 
      - Go to the Kaggle website ([https://www.kaggle.com](https://www.kaggle.com/)) and sign in to your account.
      - Click on your profile picture in the top-right corner and select "My Account" from the dropdown menu.
      - Scroll down to the "API" section and click on "Create New API Token". This will download a file named "kaggle.json" containing your API credentials.
      - Place the downloaded "kaggle.json" file in the appropriate directory. If you're using Windows, it should be placed in: `C:\Users\<your-username>\.kaggle\`. On macOS and Linux, it should be placed in: `~/.kaggle/`.
-   - Run the following command:
+   - Run the following commands:
 
      ```bash
-     make data
-     ```
-     OR (alternative commands)
-     ```bash
-     python src/data/make_raw.py
-     python src/data/make_processed.py
+     python ./src/data/make_raw.py
+     python ./src/data/make_processed.py
      python src/features/build_features.py
      ```
    - This/these command(s) will fetch the dataset, preprocess it and will extract features from it as well.
@@ -128,24 +133,20 @@ The Lyrics Generation Model can be used as follows:Preprocess the dataset:
 
    - Customize the model configuration in the `src/models/train_model.py` script.
    - Run the following command:
+
      ```bash
-     make train
-     ```
-     OR (alternative commands)
-     ```bash
-     python src/models/train_model.py
+     python ./src/models/train_model.py
      ```
    - The trained model(s) will be saved in the `models` directory.
 3. Testing Model:
 
-   - Customize the generation settings in the `src/models/predict_model.py` script.
+   - Customize the generation settings in the `src/models/infer_model.py` script.
    - Run the following command:
 
      ```bash
-     make generate
+     python ./src/models/infer_model.py
      ```
    - This command will display a number of models trained to generate lyrics from and will prompt you to select one.
-   - Alternatively, you can rn this 
    - The generated lyrics will be displayed or saved, depending on the configuration.
 
 ## 👨‍👩‍👧‍👦 Contributors
