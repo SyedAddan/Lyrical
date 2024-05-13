@@ -12,3 +12,6 @@ transformers
 torch
 matplotlib
 seaborn
+spacy
+wordcloud
+ydata_profiling
